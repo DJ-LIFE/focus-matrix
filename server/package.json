@@ -1,9 +1,9 @@
 {
  "name": "focus-matrix",
  "version": "1.0.0",
- "main": "index.js",
+ "main": "index.ts",
  "scripts": {
-  "dev": "nodemon index.js",
+  "dev": "nodemon index.ts",
   "test": "echo \"Error: no test specified\" && exit 1"
  },
  "keywords": [],
@@ -16,5 +16,9 @@
   "mongodb": "^6.12.0",
   "mongoose": "^8.9.2",
   "nodemon": "^3.1.9"
+ },
+ "devDependencies": {
+  "ts-node": "^10.9.2",
+  "typescript": "^5.7.2"
  }
 }

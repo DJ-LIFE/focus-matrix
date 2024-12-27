@@ -15,7 +15,15 @@ const connectToDb = async () => {
   }
 }
 
-app.get('/', (req, res) => {
+interface Request {
+  // Define properties of the request object if needed
+}
+
+interface Response {
+  send: (body?: any) => Response
+}
+
+app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!')
 })
 
