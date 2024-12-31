@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { ITask } from "../interfaces/interface";
-import Task from "../../models/Task";
+import Task from "../models/Task";
 
 export const createTask = async (req: Request, res: Response) => {
  const { title, description, quadrant } = req.body;

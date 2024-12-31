@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-import { ITask } from "../src/interfaces/interface";
+import { ITask } from "../interfaces/interface";
 
 const taskSchema = new Schema<ITask>({
  title: { type: String, required: true },
@@ -7,7 +7,7 @@ const taskSchema = new Schema<ITask>({
  quadrant: {
   type: String,
   enum: [
-   "urgent-importand",
+   "urgent-important",
    "not-urgent-important",
    "urgent-not-important",
    "not-urgent-not-important",
