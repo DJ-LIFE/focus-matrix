@@ -9,3 +9,11 @@ export interface ITask extends Document {
   | "urgent-not-important"
   | "not-urgent-not-important";
 }
+
+export interface IUser extends Document {
+  username: string;
+  email: string;
+  password: string;
+  tasks?: ITask[];
+  comparePassword: (password: string) => Promise<boolean>;
+}
