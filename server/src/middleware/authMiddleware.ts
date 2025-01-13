@@ -39,7 +39,6 @@ export const requireAuth = async (
   // attach user to req
   Object.assign(req, { user: { id: user._id.toString() } });
 
-  // continue
   next();
  } catch (err) {
   res.sendStatus(401);
