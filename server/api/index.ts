@@ -2,9 +2,9 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import userRoutes from "./routes/userRoutes";
-import taskRoutes from "./routes/taskRoutes";
-import authRoutes from "./routes/authRoutes";
+import userRoutes from "../src/routes/userRoutes";
+import taskRoutes from "../src/routes/taskRoutes";
+import authRoutes from "../src/routes/authRoutes";
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 
 app.get("/", (req, res) => {
- res.json("Hello from the server");
+ res.json("Hello World");
 });
 
 export default app;

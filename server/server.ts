@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import app from "./src/app";
+import app from "./api";
 import mongoose from "mongoose";
 require("dotenv").config();
 
